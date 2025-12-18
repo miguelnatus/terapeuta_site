@@ -1,14 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
-/* Design System: Natureza Orgânica e Acolhedora
- * Cores: Verde Musgo (primária), Laranja Quente (acento), Bege (base acolhedora)
- * Tipografia: Playfair Display (display), Lora (body) - clássica e acolhedora
- * Layout: Fluido, assimétrico, com divisores orgânicos
- */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap");
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
