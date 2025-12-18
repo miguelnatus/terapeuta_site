@@ -4,14 +4,13 @@ import react from "@vitejs/plugin-react";
 import fs from "node:fs";
 import path from "path";
 import { defineConfig } from "vite";
-import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
+// REMOVIDO: import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
-// Mantivemos sua lista completa aqui
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
+// REMOVIDO o vitePluginManusRuntime() da lista abaixo
+const plugins = [react(), tailwindcss(), jsxLocPlugin()];
 
 export default defineConfig({
-  // AQUI: Usamos a variável 'plugins' para carregar todos os 4, não só 2
-  plugins: plugins, 
+  plugins: plugins,
 
   resolve: {
     alias: {
@@ -30,7 +29,6 @@ export default defineConfig({
     port: 3000,
     strictPort: false,
     host: true,
-    // AQUI: Adicionamos seu domínio na lista
     allowedHosts: [
       "danielvonrosenthal.com.br",
       "www.danielvonrosenthal.com.br",
