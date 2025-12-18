@@ -6,14 +6,13 @@ import path from "path";
 import { defineConfig } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
-
+// Mantivemos sua lista completa aqui
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(), // <--- Adicione isso
-  ],
+  // AQUI: Usamos a variável 'plugins' para carregar todos os 4, não só 2
+  plugins: plugins, 
+
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -29,14 +28,12 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    strictPort: false, // Will find next available port if 3000 is busy
+    strictPort: false,
     host: true,
+    // AQUI: Adicionamos seu domínio na lista
     allowedHosts: [
-      ".manuspre.computer",
-      ".manus.computer",
-      ".manus-asia.computer",
-      ".manuscomputer.ai",
-      ".manusvm.computer",
+      "danielvonrosenthal.com.br",
+      "www.danielvonrosenthal.com.br",
       "localhost",
       "127.0.0.1",
     ],
