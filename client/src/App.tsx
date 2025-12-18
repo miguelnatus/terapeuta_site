@@ -14,6 +14,7 @@ function Router() {
     <Switch>
       {/* Rotas da aplicação */}
       <Route path={"/"} component={Home} />
+      <Route path={"/d-rel-1"} component={Home} />
       <Route path={"/404"} component={NotFound} />
       
       {/* Rota de fallback final: Se nenhuma rota acima combinar, mostra a página 404 */}
