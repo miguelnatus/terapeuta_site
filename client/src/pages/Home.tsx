@@ -108,8 +108,8 @@ export default function Home() {
             {/* Image */}
             <div className="order-2 md:order-1">
               <img
-                src="/images/therapy-connection.jpg"
-                alt="Conexão terapêutica"
+                src="/images/daniel-rosenthal-terapeuta.jpg"
+                alt="Daniel Rosenthal - Terapeuta"
                 className="rounded-2xl shadow-lg w-full h-96 object-cover"
               />
             </div>
